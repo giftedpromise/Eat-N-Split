@@ -62,7 +62,7 @@ function Button({ children, onClick }) {
   );
 }
 
-function FormAddFriend() {
+function FormAddFriend({ onAddFriend }) {
   const [name, setName] = useState("");
   const [image, setImage] = useState("https://i.pravatar.cc/48?u=118836");
 
@@ -77,7 +77,7 @@ function FormAddFriend() {
       balance: 0,
     };
 
-    console.log(newFriend);
+    onAddFriend(newFriend);
 
     setName("");
     setImage("https://i.pravatar.cc/48?u=118836");
