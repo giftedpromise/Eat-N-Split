@@ -209,3 +209,23 @@ form h2 {
     width: 100%; /* Full width for button */
   }
 }
+
+@media (max-width: 480px) {
+  .sidebar li {
+    grid-template-columns: auto 1fr; /* Further adjust columns */
+    gap: 1rem; /* Adjust gap */
+  }
+
+  .form-add-friend,
+  .form-split-bill {
+    padding: 1.5rem; /* Adjust padding for smaller screens */
+  }
+
+  .form-split-bill h2 {
+    font-size: 1.8rem; /* Adjust font size for header */
+  }
+
+  form .button {
+    padding: 1rem; /* Adjust padding for button */
+  }
+}
