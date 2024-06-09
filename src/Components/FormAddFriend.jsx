@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Button from "./Button";
 
 export default function FormAddFriend({ onAddFriend }) {
   const [name, setName] = useState("");
