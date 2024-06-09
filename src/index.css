@@ -167,3 +167,45 @@ form h2 {
   letter-spacing: -0.5px;
   margin-bottom: 1.6rem;
 }
+
+@media (max-width: 768px) {
+  html {
+    font-size: 50%; /* Adjust font size for smaller screens */
+  }
+
+  body {
+    height: auto; /* Allow height to auto adjust */
+    padding: 2rem; /* Add some padding */
+  }
+
+  .app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; /* Adjust gap between elements */
+  }
+
+  .sidebar ul {
+    gap: 1rem; /* Adjust gap between list items */
+  }
+
+  .sidebar li {
+    grid-template-columns: auto 1fr auto; /* Adjust columns for better fit */
+  }
+
+  .form-add-friend,
+  .form-split-bill {
+    grid-template-columns: 1fr; /* Make forms stack vertically */
+    padding: 2rem; /* Adjust padding */
+    width: 100%; /* Full width for forms */
+  }
+
+  .form-split-bill h2 {
+    font-size: 2rem; /* Adjust font size for header */
+  }
+
+  form .button {
+    grid-column: 1; /* Adjust button position */
+    width: 100%; /* Full width for button */
+  }
+}
